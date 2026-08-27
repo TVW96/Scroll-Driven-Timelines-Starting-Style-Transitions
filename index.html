@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Week 07 Lab: Scroll Timelines & Starting Styles</title>
+</head>
+<body>
+
+  <!-- Reading Progress Indicator -->
+  <div class="scroll-tracker"></div>
+
+  <div class="editorial-container">
+    <header class="editorial-header">
+      <span class="editorial-tag">Future of the Web</span>
+      <h1 class="editorial-title">The Evolution of Motion Specs</h1>
+      <p class="editorial-lead">How native browser engines reclaimed animation performance from heavy script libraries.</p>
+    </header>
+
+    <main class="editorial-body">
+      <p>Web animation was historically a battleground. For years, designers relied on heavy scripting engines to calculate element offsets on every single frame. This hijacked the browser's scrolling thread, resulting in stuttering layouts and drained mobile batteries.</p>
+
+      <!-- Scroll-Reveal Image Container -->
+      <figure class="reveal-figure">
+        <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=800" alt="Cyber security network interface" class="reveal-img">
+        <figcaption>Hardware-accelerated layouts render smoothly at 120Hz.</figcaption>
+      </figure>
+
+      <p>With modern CSS specifications, the game has changed entirely. By linking CSS Keyframe timelines directly to scroll offsets, the browser handles position computations natively on the compositor thread—completely isolated from main thread blockages.</p>
+
+      <!-- Pop-In Interactive Component -->
+      <section class="signup-widget">
+        <div class="signup-widget__inner">
+          <h3>Subscribe to the Spec</h3>
+          <p>Get deep-dives into emerging CSS and browser platform APIs delivered weekly.</p>
+          <div class="signup-fields">
+            <input type="email" placeholder="Enter your email" class="input-field">
+            <button class="btn-submit">Join Feed</button>
+          </div>
+        </div>
+      </section>
+
+      <p>Furthermore, the introduction of declarative transition triggers like `@starting-style` allows developers to define starting properties for elements that are rendering for the first time—making entrance transitions clean, fluid, and entirely script-free.</p>
+    </main>
+  </div>
+
+</body>
+</html>
